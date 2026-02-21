@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Experience & Education Entries */
+.entry {
+    margin-bottom: 15px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Print Optimization */
+@media print {
+    body { background: none; padding: 0; }
+    .cv-container { box-shadow: none; width: 100%; max-width: 100%; margin: 0; padding: 20px; }
+}
